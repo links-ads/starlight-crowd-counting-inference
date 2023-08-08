@@ -161,4 +161,4 @@ cython_debug/
 
 .vscode
 *.onnx
-output_test.jpg
+*_output.jpg

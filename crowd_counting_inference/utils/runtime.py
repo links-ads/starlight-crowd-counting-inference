@@ -36,7 +36,7 @@ class ONNXRuntime(BaseRuntime):
         # Prepare input data for the ONNX Runtime session
         ort_inputs = {
             self.ort_session.get_inputs()[0]
-            .name: np.array([input_data])
+            .name: np.array(input_data)
             .astype(np.float32)
         }
         # Run the inference using ONNX Runtime
