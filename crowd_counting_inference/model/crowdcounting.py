@@ -60,6 +60,7 @@ class CrowdCountingModel(Model):
         self.head_threshold = head_threshold
         self.patch_size = patch_size
         self.batch_size = batch_size
+        self.kf_vector = []
 
     @staticmethod
     def _extract_patches(image: np.ndarray, kernel_size: tuple) -> np.ndarray:
